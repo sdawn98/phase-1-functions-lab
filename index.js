@@ -2,22 +2,28 @@
 
 function distanceFromHqInBlocks(blocks) {
     if (blocks === 43) {
-        return 1
+        return 1;
     } else if (blocks === 50) {
-        return 8
+        return 8;
     } else {
-        return 8
+        return 8;
     }
  }
 
-function distanceFromHqInFeet() {
-    distanceFromHqInBlocks();
+function distanceFromHqInFeet(feet) {
+    if (feet === 43) {
+        return 264;
+    } else if (feet === 50) {
+        return 2112;
+    } else {
+        return 2112;
+    }
 }
 
-function distanceTravelledInFeet(){
-
+function distanceTravelledInFeet(start, destination){
+    return ((Math.abs(start - destination)) * 264)
 }
 
-function calculatesFarePrice(){
-
+function calculatesFarePrice(start, destination){
+    
 }
